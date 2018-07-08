@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Section Transitions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Old+Standard+TT" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    
+</head>
+<body>
+        <!-- Create 4 sections on your page that have different background colors and are 800px in height. 
+        If you’re stumped on colors you can use, pick 4 from https://flatuicolors.com/. 
+        They should have the following content: -->
+        <!-- Four Sections Different Backgrounds -->
+    <section id="one">
+             <h1 class="title">Sandy Beach</h1>
+       
+                <div>
+                    <img class="image" src="https://images.unsplash.com/photo-1525968635328-37e2ce22d2d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3dc43c71302c88d8939a94b6e15c687&auto=format&fit=crop&w=1952&q=80"> 
+                </div>
+
+                <div>
+                    <p class="text">Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jícama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic </p>
+                </div>
+    </section>
+
+    <section id="two">
+        <h1 class="title">Splash!</h1>
+            <div>
+                <img class="img-2 "src="https://images.unsplash.com/photo-1474925558543-e7a5f06e733e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ff55dac8e1292f5c3b0b33c0a5a664d3&auto=format&fit=crop&w=1950&q=80">
+            </div>
+            <div>
+                <p class="smaller">Proin ac lobortis urna, quis pretium est. Mauris vitae sodales justo, a pharetra purus. Mauris tempor aliquet tincidunt. Fusce fringilla augue lorem, a rhoncus diam aliquam in. Integer scelerisque elit sit amet magna aliquam vulputate. Maecenas vel est rutrum, lobortis arcu eu, convallis turpis. Integer a sollicitudin nulla, non placerat est. Vestibulum sodales quis sapien et varius. Sed ornare, arcu eget consectetur porttitor, tortor purus.</p><br>
+                <p class="smaller">Aliquam vulputate, sem a viverra fermentum, magna enim fermentum nibh, sit amet tempus ligula dolor semper arcu. Morbi accumsan est nec ex vulputate, non efficitur justo gravida. Phasellus ullamcorper turpis id augue lobortis fermentum. Integer tempus nibh tortor, vel dictum massa fringilla vitae. Suspendisse a ipsum auctor, rhoncus mauris et, pulvinar leo. Aenean interdum tortor ultricies lacus sollicitudin vulputate. Aenean dignissim erat vitae varius laoreet. Suspendisse vulputate a ligula id porttitorpis</p> 
+            </div>
+    </section>
+
+    <section id="three">
+        <h1 class="title">Water Melon</h1>
+            <div>
+                <img class="image" src="https://images.unsplash.com/photo-1523958797857-d9c3456f60b3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82a70fb9517fe967e5137ca907da39af&auto=format&fit=crop&w=1950&q=80">
+            </div>
+            <div>
+                <p class="text">Celery quandong swiss chard chicory earthnut pea potato. 
+                Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. 
+                Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard</p>
+            </div>
+        
+    </section>
+
+    <section id="four">
+        <h1 class="title">Good Times</h1>
+            <div>
+                <img src= "https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=865da6bb42e2b633198fb9ca07dee3ed&auto=format&fit=crop&w=1949&q=80"> 
+            </div>
+            <div>
+                <p><q>Would you like me to give you a formula for success? It's quite simple, really: Double your rate of failure. You are thinking of failure as the enemy of success. But it isn't at all. You can be discouraged by failure or you can learn from it, so go ahead and make mistakes. Make all you can. Because remember that's where you will find success.</q>
+
+                -- Thomas J. Watson</p>
+            </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+Section 1 and Section 3 should have a picture on the left and a paragraph on the right. 
+
+Section 2 should have a single picture centered with a caption below it (in smaller text than your regular p tag).
+
+Section 4 should have a quote from a famous person. 
+
+Now that you have the required content, create a css class called hidden and the only thing it should have in it is opacity: 0;. Apply this class to all your content (but not the sections). The page should look like it did from step 1 now, however the actual content is still there. 
+Create a keyframe that transitions from 0 opacity to 1 opacity over 600ms. Add that keyframe to a class called show. This class should be able to reveal a hidden element. 
+Apply show to the items in the first section and take note of the result. No we could put this on all the elements on the page, however this would make everything fade in on page load. We want sections to fade in as we scroll the page. 
+Create an event listener on the window object that listens for scroll events. It should look something like this: --> 

@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    padding: 1px;
+}
+
+section {
+    height: 800px;
+    padding: 0;
+    margin: 0;
+    
+    /* set the opacity to 0 to start */
+    opacity: 0;
+}
+
+/* 
+    set the fadeIn keyframe to the fadeIn class
+      this animation runs for .6 seconds
+  */
+section.fadeIn {
+    animation: fadeIn .3s forwards;
+  } 
+
+/* the fadeIn keyframe */
+@keyframes fadeIn {
+    0%   { 
+        opacity: 0; 
+    }
+
+    100% { 
+        opacity: 1; 
+    }
+}
+
+
+
+
+
+/* Images  */
+img {
+    border-radius: 85%;
+    width: 350px;
+    border: 1px solid #82ccdd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: green;
+}
+
+
+.title{
+    font-family: 'Clicker Script', cursive;
+    font-size: 75px;
+    text-shadow: 2px 2px 2px #0a3d62;
+}
+
+.smaller{
+    font-size: 14px;
+    font-family: 'Old Standard TT', serif;   
+}
+/* Section background colors  */
+ 
+section:nth-child(1) {
+    background-color:#f7d794;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ section:nth-child(2) {
+    background-color:#f5cd79;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(3) {
+    background-color:#f8a5c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(4) {
+    background-color:#f78fb3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+p {
+
+    font-size: 16px;
+    font-family: 'Old Standard TT', serif;
+    
+}
